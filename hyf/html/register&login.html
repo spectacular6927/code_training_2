@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <title>注册&登陆</title>
+    <style>
+
+        html {
+            background-image: url("../images/39xklv.jpg");
+        }
+
+        #table {
+            border-radius: 10px;
+            opacity: 0.8;
+        }
+
+        #span1 {
+            display: none;
+        }
+
+        #r {
+            background-color: #7aa6da;
+        }
+
+        #l2 {
+            background-color: #7aa6da;
+        }
+
+        input, button {
+            width: 50%;
+            height: 20px;
+            border-radius: 4px;
+            padding: 6px 10px;
+            background-color: #bce8f1;
+            border: #7aa6da;
+
+        }
+
+        button {
+            background-color: #67cdcc;
+        }
+
+        #user {
+            text-align: right;
+        }
+
+        th {
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+<table id="table" width="40%" align="center" valign="middle" bgcolor="#708090">
+    <tr>
+        <td height="500">
+
+            <div id="span1">
+                <table width="80%" align="center" cellpadding="10" cellspacing="10">
+                    <tr valign="top" align="center">
+                        <th onclick="cha1()" id="r">注册</th>
+                        <th onclick="cha2()" id="l">登录</th>
+                    </tr>
+                    <tr>
+                        <th colspan="2" size="+2">免费注册</th>
+                    </tr>
+                    <form action="#">
+                        <tr>
+                            <td id="user"><input name="user" type="text" placeholder="昵称*"></td>
+                            <td><input name="name" type="text" placeholder="姓名*"></td>
+                        </tr>
+                        <tr>
+                            <td align="center" colspan="2"><input class="em" width="100" name="email" type="email"
+                                                                  placeholder="邮箱*">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center" colspan="2"><input class="em" name="passwd1" type="password" placeholder="输入密码*">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center" colspan="2"><input class="em" name="passwd2" type="password" placeholder="再输入一次密码*">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center" colspan="2">
+                                <button onclick="click1()" name="email" type="button"
+                                        style="padding-bottom: 26px;width: 100px">
+                                    注册
+                                </button>
+                            </td>
+                        </tr>
+                    </form>
+                </table>
+            </div>
+
+
+            <div id="span2">
+                <table width="80%" align="center" cellpadding="10" cellspacing="10">
+                    <tr valign="top" align="center">
+                        <th onclick="cha1()" id="r2">注册</th>
+                        <th onclick="cha2()" id="l2">登录</th>
+                    </tr>
+                    <tr>
+                        <th colspan="2" size="+2">快速登陆</th>
+                    </tr>
+
+                    <form action="#">
+                        <tr>
+                            <td align="center" colspan="2" height="32px">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center" colspan="2"><input class="em" width="100" name="email" type="email"
+                                                                  placeholder="邮箱*">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center" colspan="2"><input class="em" name="passwd1" type="password" placeholder="输入密码*">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center" colspan="2" height="32px">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center" colspan="2">
+                                <button onclick="click1()" name="email" type="button"
+                                        style="padding-bottom: 26px;width: 100px">
+                                    登录
+                                </button>
+                            </td>
+                        </tr>
+                    </form>
+                </table>
+            </div>
+
+        </td>
+    </tr>
+</table>
+
+<script>
+    function cha1() {
+        document.getElementById('span1').style.display = 'block';
+        document.getElementById('span2').style.display = 'none';
+
+    }
+
+    function cha2() {
+        document.getElementById('span1').style.display = 'none';
+        document.getElementById('span2').style.display = 'block';
+
+    }
+
+    function click1() {
+
+            alert('输入有误，请检查并重新输入！')
+
+
+    }
+
+</script>
+</body>
+</html>
