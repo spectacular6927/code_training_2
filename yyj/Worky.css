@@ -1,0 +1,68 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+h1{
+    position: relative;
+    text-transform: uppercase;
+    color: #333333;
+    font-size: 8rem;
+    background-color: #222222;
+}
+h1::after{
+    content: '天气之子';
+    position: absolute;
+    top: 0;
+    left: 0;
+    color:transparent;
+    background-image: linear-gradient(to right,#c23616,#192a56,#00d2d3,yellow,#6d214f,#2e86de,#4cd137,#e84118);
+    background-clip: text;
+    -webkit-background-clip: text;
+    clip-path: circle(100px at 0% 50%);
+    animation:move 5s infinite;
+}
+@keyframes move{
+    0%{
+        clip-path: circle(100px at 0% 50%);
+    }
+    50%{
+        clip-path: circle(100px at 100% 50%);
+    }
+    100%{
+        clip-path: circle(100px at 0% 50%);
+    }
+}
+.box1{
+    margin: auto;
+    width: 90%;
+    font-family: sans-serif;
+    background-color: #f4f4f4;
+    font-size: 16px;
+    font-weight: normal;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+img{
+    float: left;
+}
