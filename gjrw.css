@@ -1,0 +1,90 @@
+.w{
+    width: 940px;
+    margin: 0 auto;
+}
+.header{
+    background-color: rgb(255, 255, 255);
+    padding-top: 5px;
+}
+.logo{
+    float: left;
+    margin-top: 15px;
+}
+.name{
+    text-decoration: none;
+    color: black;
+    font: bold 16px Georgia;
+    
+}
+
+.nav{
+    float: right;
+    
+}
+.nav li{
+    float: left;
+}
+.nav li a{
+    color: black;
+    font: bold 14px Georgia;
+    text-decoration: none;
+}
+.nav li a:hover{
+    color: rgb(211, 99, 25);
+}
+.banner{
+    margin-left: 550px;
+    margin-top: 100px;
+    margin-bottom: 38px;
+}
+.haha{
+    position: absolute;
+    left: 720px;
+    top: 173px;
+}
+.hahaha{
+    position: absolute;
+    left:550px ;
+    top:220px ;
+    font-style: oblique;
+    color: rgb(189, 185, 178);
+}
+.content .ma,.content .so,.content .ha,.contents .de,.contents .ba,.contents .sa{
+    float: left;
+    height: 400px;
+    width: 300px;
+    margin-bottom: 30px;
+    background-color: rgb(192, 194, 189);
+    
+}
+.content .so,.contents .ba{
+    margin: 0 20px;
+}
+.clearfix:before,
+.clearfix:after{
+    content:"" ;
+    display:table ;
+    clear: both;
+}
+
+.clearfix{
+    zoom: 1;
+}
+.woqu,.wocao,.wori{
+    font-size: 10px;
+    font-style: oblique;
+}
+.lo{
+    margin-top: 100px;
+}
+.lulu{
+    font-size: 10px;
+    font-style: oblique;
+}
+.circle{
+    width: 120px;
+    height: 120px;
+    border-radius: 60px;
+    text-align: center;
+    margin: 0 auto;
+}
